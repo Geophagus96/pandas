@@ -7,6 +7,8 @@ from scipy.stats import rankdata
 import statsmodels.api as sm
 import talib
 
+df.sort(['a', 'b'], ascending=[True, False])
+
 
 def wa(df):
     weights = 0.9 * np.arange(len(df))
